@@ -1,0 +1,18 @@
+@mixin button ($w,$h,$fz,$fw,$color,$bc){
+width: $w;
+height: $h;
+font-size: $fz;
+font-weight: $fw;
+color: $color;
+background-color: $bc;
+}
+
+
+
+.b1{
+    @include button(200px,200px,30px, 100,red,rgb(90, 194, 22))
+}
+.b2{
+    @extend .b1;
+    background-color: rebeccapurple;
+}
